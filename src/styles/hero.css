@@ -24,7 +24,7 @@
   padding: 10px;
 }
 .content-upper {
-  margin-top: 100px;
+  margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -58,4 +58,8 @@
 
 p {
   font-size: 1.1rem;
+}
+
+.occupation {
+  font-size: 4rem;
 }

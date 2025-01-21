@@ -13,6 +13,8 @@ export default function navigation() {
                 Hello I'm <span id="name">Ezekiel</span>
               </h1>
               <br />
+              <p className="occupation">Web Developer</p>
+              <br />
               <p>An aspiring web developer with a strong in building user-friendly websites and applications. Eager to learn and grow in the field, constantly exploring new technologies and improving their skills.</p>
             </div>
             <div className="content-lower">
