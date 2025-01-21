@@ -28,29 +28,26 @@
   object-fit: cover;
 }
 
-.right-section{
-    height: 100%;
-    position: absolute;
-    right: 80px;
-    display: flex;
-    align-items: center;
-    
+.right-section {
+  height: 100%;
+  position: absolute;
+  right: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .link-container {
-    width: 600px;
-    height: 100%;
-    display: flex;
-    justify-content: end;
-    gap: 80px;
-
-
+  width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 80px;
 }
 
 .link {
   text-decoration: none; /* Remove underline from links */
   color: #4c8cb5; /* Set a color for the links */
-  font-size: 1.3rem; /* Set font size */
+  font-size: 1rem; /* Set font size */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
   display: grid;
   place-items: center;
