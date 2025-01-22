@@ -22,6 +22,9 @@ export default function Navigation() {
           </a>
         </div>
       </div>
+      <div className="menuContainer">
+        <i class='bx bx-menu'></i>
+      </div>
     </div>
   );
 }

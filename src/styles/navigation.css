@@ -3,6 +3,14 @@
   height: 90px;
   display: flex;
   position: relative;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+}
+
+.menuContainer {
+  display: none;
 }
 
 .left-section {
@@ -47,12 +55,52 @@
 .link {
   text-decoration: none; /* Remove underline from links */
   color: #4c8cb5; /* Set a color for the links */
-  font-size: 1rem; /* Set font size */
+  font-size: 1.2rem; /* Set font size */
   transition: color 0.3s ease; /* Smooth transition for hover effect */
   display: grid;
   place-items: center;
+  transition: transform 0.3s ease 0s;
 }
 
 .link:hover {
   color: #0056b3; /* Change color on hover */
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .left-section {
+    display: none;
+  }
+  .right-section {
+    display: none;
+  }
+
+  .menuContainer {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+
+  .menuContainer i {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+  }
+
+}
+
+@media (max-width: 480px) { 
+  .navigation-container {
+    height: 50px;
+  }
+
+  .menuContainer {
+    right: 20px;
+    top: 10px;
+  }
+
+  .menuContainer i {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
 }
