@@ -1,6 +1,12 @@
 import "./../styles/navigation.css";
 
 export default function Navigation() {
+
+  const handleScroll = (event, sectionId) => {
+    event.preventDefault();
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="navigation-container">
       <div className="navigation-content">
@@ -9,7 +15,7 @@ export default function Navigation() {
         </div>
         <div className="right-section">
           <div className="link-container">
-            <a href="#" className="link">
+            <a href="#about" className="link" onClick={(e) => handleScroll(e, "about")}>
               About Me
             </a>
             <a href="#" className="link">

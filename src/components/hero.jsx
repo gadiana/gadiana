@@ -1,8 +1,14 @@
 import "./../styles/hero.css";
-import gadiana from "./../assets/images/gadiana1.png";
+import gadiana from "./../assets/images/aboutMeImage.webp";
 import Button from "./button";
 
 export default function navigation() {
+
+  const handleScroll = (event, sectionId) => {
+    event.preventDefault();
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="hero">
       <div className="container">

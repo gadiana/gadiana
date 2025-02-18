@@ -1,7 +1,12 @@
-import './../styles/button.css'
+import './../styles/button.css';
 
 export default function Button({ title }) {
-  return <button className="button">{title}</button>;
+  const handleClick = () => {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return <button className="button" onClick={handleClick}>{title}</button>;
 }
-
-
