@@ -7,8 +7,10 @@ function App() {
   return (
     <>
       <Navigation />
-      <Hero/>
-      <About/>
+      <Hero />
+      <div id="about">
+        <About />
+      </div>
     </>
   );
 }
