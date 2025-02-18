@@ -7,6 +7,42 @@
 }
 
 body{
-  background-color: black;
+  background-color: #37474f;
   color: white;
+}
+
+.container{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+.justify-end{
+  justify-content: end;
+}
+.justify-start{
+  justify-content: start;
+}
+
+.justify-spaceBetween{
+  justify-content: space-between;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.no-wrap{
+  flex-wrap: nowrap;
+}
+
+.wrap-reverse{
+  flex-wrap: wrap-reverse;
 }

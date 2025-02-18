@@ -1,26 +1,30 @@
-.hero {
+.hero{
   width: 100%;
-  height: 85vh;
   margin-top: 0;
   display: flex;
+  align-items: end;
+  justify-content: center;
 }
 
-.halfContainer {
-  width: 50%;
-  height: 100%;
+
+.contentContainer {
+  width: 663px;
+  height: 600px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.contentContainer {
-  width: 500px;
-  height: 500px;
+.imageContainer{
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  justify-content: center;
 }
+
 .content-upper {
   margin-top: 40px;
   width: 100%;
@@ -36,22 +40,24 @@
 }
 
 #name {
-  color: #4c8cb5;
+  color: #17a2b8;
+  font-weight: bolder;
 }
 
 .img-content {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Prevents overflow */
 }
 
 .img-content img {
-  width: 400px;
-  height: 400px;
-  position: center;
-  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Keeps the aspect ratio, fitting within the container */
 }
 
 p {
@@ -63,9 +69,20 @@ p {
 }
 
 @media (max-width: 1020px) {
+
+  .contentContainer {
+    width: 100%;
+    height: auto;
+  }
+
   .hero {
     height: auto;
     flex-direction: column-reverse;
+  }
+
+  .container{
+    flex-direction: column-reverse;
+    width: 100%;
   }
 
   .img-content {
@@ -74,13 +91,14 @@ p {
     align-items: center;
   }
 
-  .halfContainer {
+  .imageContainer{
     width: 100%;
     height: auto;
     display: flex;
     align-items: start;
     justify-content: center;
   }
+
   .contentContainer {
     width: 100%;
     display: flex;
