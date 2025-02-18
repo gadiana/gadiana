@@ -1,8 +1,7 @@
 import './../styles/button.css'
 
-
-export default function button() {
-    return(
-        <button className='button'>About Me</button>
-    );
+export default function Button({ title }) {
+  return <button className="button">{title}</button>;
 }
+
+

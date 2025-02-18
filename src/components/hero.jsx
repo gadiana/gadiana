@@ -6,7 +6,7 @@ export default function navigation() {
   return (
     <div className="hero">
       <div className="container">
-      <div className="contentContainer">
+        <div className="contentContainer">
           <div>
             <div className="content-upper">
               <h1>
@@ -23,17 +23,15 @@ export default function navigation() {
               </p>
             </div>
             <div className="content-lower">
-              <Button />
+              <Button title="About Me" />
             </div>
           </div>
         </div>
         <div className="imageContainer">
-        
-        <div className="img-content">
-          <img src={gadiana} alt="Logo" />
+          <div className="img-content">
+            <img src={gadiana} alt="Logo" />
+          </div>
         </div>
-      
-    </div>
       </div>
     </div>
   );

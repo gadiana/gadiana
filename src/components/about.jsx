@@ -35,7 +35,7 @@ export default function navigation() {
                     <li><span>Phone:</span> <span>+63 936 420 2029</span></li>
                 </ul>
                 <div class="button-container">
-                    <Button />
+                    <Button title="Download CV" />
                 </div>
             </div>
 
