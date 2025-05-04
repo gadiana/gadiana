@@ -32,18 +32,21 @@
   padding: 0px 20px;
 }
 
-.message-container{
+.message-container {
   width: 700px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   transition: transform 0.2s ease;
 }
+
 
 .inputContainer{
   display: flex;
@@ -58,7 +61,7 @@
   width: 90%;
   font-size: 1rem;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #f1f1f1;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -159,6 +162,10 @@
   .send-button{
     font-size: 0.8rem;
   }
+
+  .social-links a {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -177,5 +184,9 @@
 
   .send-button{
     font-size: 0.6rem;
+  }
+
+  .social-links a {
+    font-size: 25px;
   }
 }

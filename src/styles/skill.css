@@ -47,11 +47,16 @@
 }
 
 .skills-card {
-  background-color: var(--card-bg);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 1rem;
   transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* lighter border */
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* optional shadow for depth */
 }
+
 
 .skills-card:hover {
   transform: translateY(-5px);
@@ -94,7 +99,7 @@
 }
 
 .skill-percent {
-  color: gray;
+  color: rgb(255, 255, 255);
 }
 
 .progress-bar {
@@ -115,7 +120,7 @@
 :root {
   --bg: #ffffff;
   --text: #1a1a1a;
-  --card-bg: #f8f9fa;
+  --card-bg: #ffffff;
   --primary: #3642db;
 }
 
@@ -123,7 +128,7 @@
   :root {
     --bg: #121212;
     --text: #ffffff;
-    --card-bg: #1e1e1e;
+    --card-bg: none;
     --primary: #6c78ff;
   }
 }
