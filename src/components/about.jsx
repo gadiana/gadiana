@@ -2,7 +2,7 @@ import "./../styles/about.css";
 import computing from "./../assets/images/gadiana1.png";
 import Button from "./button";
 
-export default function navigation() {
+export default function About() {
   return (
     <div className="about">
         <div className="container">
@@ -35,7 +35,7 @@ export default function navigation() {
                     <li><span>Phone:</span> <span>+63 936 420 2029</span></li>
                 </ul>
                 <div class="button-container">
-                    <Button title="Download CV" />
+                    <Button title="Download CV" downloadLink="/gadiana/cvfile/GadianaCV.pdf" />
                 </div>
             </div>
 

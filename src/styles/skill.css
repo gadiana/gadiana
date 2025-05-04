@@ -1,0 +1,129 @@
+.skills-section {
+  padding: 4rem 1rem;
+  padding-bottom: 0px;
+  color: var(--text);
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding: 0px 20px;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-title {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.skills-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary);
+}
+
+.category-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.skill-percent {
+  color: gray;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+/* Theme Variables */
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --card-bg: #f8f9fa;
+  --primary: #3642db;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #ffffff;
+    --card-bg: #1e1e1e;
+    --primary: #6c78ff;
+  }
+}

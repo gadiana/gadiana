@@ -1,0 +1,112 @@
+.experience {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    place-items: center;
+  }
+  
+  .container-experience {
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  
+  .section-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    padding: 0px 20px;
+  }
+  
+  .experience-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    width: 100%;
+
+    z-index: 1;
+    margin-top: 3rem;
+  }
+  
+  .experience-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    transition: transform 0.2s ease;
+  }
+  
+  .experience-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .experience-role {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  .experience-company {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 5px;
+  }
+  
+  .experience-duration {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+  
+  .experience-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #ddd;
+  }
+  
+  .experience-tasks {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #ddd;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .experience-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        margin: 0px 10px;
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .experience-card {
+      padding: 15px;
+    }
+  
+    .experience-role {
+      font-size: 1.25rem;
+    }
+  
+    .experience-tasks {
+      font-size: 0.9rem;
+    }
+  }
+  

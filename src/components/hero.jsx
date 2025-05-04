@@ -1,8 +1,30 @@
+import { useEffect, useState } from "react";
 import "./../styles/hero.css";
-import gadiana from "./../assets/images/aboutMeImage.webp";
 import Button from "./button";
+import gadiana1 from "./../assets/images/gadiana1.png"; // Import the new image
+import dance2 from "./../assets/images/dance2.gif"; // Assuming you also need this
 
-export default function navigation() {
+export default function Hero() {
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 1020);
+
+  useEffect(() => {
+    // Prevent scroll during fade-in
+    document.body.classList.add("no-scroll");
+    const timer = setTimeout(() => {
+      document.body.classList.remove("no-scroll");
+    }, 1000);
+
+    // Handle screen resizing
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 1020);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const handleScroll = (event, sectionId) => {
     event.preventDefault();
@@ -12,20 +34,17 @@ export default function navigation() {
   return (
     <div className="hero">
       <div className="container">
-        <div className="contentContainer">
+        <div className="contentContainer block">
           <div>
             <div className="content-upper">
-              <h1>
+              <h1 className="intro">
                 Hello I'm <span id="name">Ezekiel</span>
               </h1>
-              <br />
               <p className="occupation">Web Developer</p>
-              <br />
-              <p>
-                An aspiring web developer with a strong in building
-                user-friendly websites and applications. Eager to learn and grow
-                in the field, constantly exploring new technologies and
-                improving their skills.
+              <br className="br-space" />
+              <p className="description">
+                An aspiring web developer with a knowledge in building
+                user-friendly websites and applications.
               </p>
             </div>
             <div className="content-lower">
@@ -33,9 +52,9 @@ export default function navigation() {
             </div>
           </div>
         </div>
-        <div className="imageContainer">
+        <div className="imageContainer block">
           <div className="img-content">
-            <img src={gadiana} alt="Logo" />
+            <img src={isMobileView ? gadiana1 : dance2} alt="Profile" />
           </div>
         </div>
       </div>
