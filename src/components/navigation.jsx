@@ -54,6 +54,9 @@ export default function Navigation() {
             <a href="#tour" className="link" onClick={(e) => handleScrollToSection(e, "tour")}>
               Blogs
             </a>
+            <a href="#cert" className="link" onClick={(e) => handleScrollToSection(e, "cert")}>
+              Certificates
+            </a>
             <a href="#contact" className="link" onClick={(e) => handleScrollToSection(e, "contact")}>
               Contact
             </a>
